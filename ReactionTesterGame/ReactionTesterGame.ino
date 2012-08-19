@@ -42,6 +42,22 @@ byte countdownControl[][3] = {
                      {0,0,0},                     
                    };
 
+
+byte attractModeControl[][3] = {
+                     {0,0,0},
+                     {1,0,0},
+                     {1,1,0},
+                     {1,1,1},
+                     {0,1,1},
+                     {0,0,1},
+                     {0,0,0},
+                     {0,0,1},
+                     {0,1,1},
+                     {1,1,1},
+                     {1,1,0},
+                     {1,0,0},
+                   };
+
 #define POWERUP 0
 #define START_COUNTDOWN 1
 #define DO_COUNTDOWN 2
@@ -149,6 +165,14 @@ void loop() {
        break;
        
      case WAIT_START:
+       if(playAnimation(attractModeControl, sizeof(attractModeControl)/3)) {
+         waitTime -= 25;
+         if (waitTime < 0) {
+           lightAll();
+           waitTime = 250;
+           nextChange = millis() + waitTime;
+         }
+       }
        if (buttonPress()) {
          currentState = START_COUNTDOWN;
        }
