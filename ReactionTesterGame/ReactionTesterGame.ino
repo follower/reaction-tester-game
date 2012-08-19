@@ -120,6 +120,8 @@ byte lossDisplayControl [][3] = {
   {0,0,0},
   {1,0,1},
   {0,0,0},
+  {0,0,0},
+  {0,0,0},
 };
 
 byte winDisplayControl [][3] = {
