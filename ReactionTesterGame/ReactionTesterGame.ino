@@ -1,17 +1,21 @@
+const int NUM_LEDS = 3;
+
+int leds[NUM_LEDS] = {3, 4, 2};
+
+
+const int buttonPin = 1;
+
+
 void setup() {
-  pinMode(14, INPUT);
-  digitalWrite(14, HIGH);
+
+  pinMode(buttonPin, INPUT);
+  digitalWrite(buttonPin, HIGH);
   
-  pinMode(10, OUTPUT);
-  digitalWrite(10, LOW);
+  for (int i = 0; i < NUM_LEDS; i++) {
+    pinMode(leds[i], OUTPUT);
+    digitalWrite(leds[i], LOW);
+  }
 
-  pinMode(6, OUTPUT);
-  digitalWrite(6, LOW);
-
-  pinMode(7, OUTPUT);
-  pinMode(9, OUTPUT);
-  digitalWrite(9, HIGH);
-  digitalWrite(7, HIGH);
 }
 
 unsigned long finishTime = 0;
@@ -57,18 +61,18 @@ boolean inKeyPress = false;
 
 void clearButtonState() {
   finishTime = 0;
-  while (!(digitalRead(14) == HIGH)) {
+  while (!(digitalRead(buttonPin) == HIGH)) {
     // wait for button to be released
   }
 }
 
 boolean buttonPress() {
-  if (inKeyPress && (digitalRead(14) == LOW) && (millis() > finishTime)) {
+  if (inKeyPress && (digitalRead(buttonPin) == LOW) && (millis() > finishTime)) {
     inKeyPress = false; // TODO: Wait until release?
     return true;
   }
 
-  if ((digitalRead(14) == LOW) && !inKeyPress) {
+  if ((digitalRead(buttonPin) == LOW) && !inKeyPress) {
     inKeyPress = true;
     finishTime = millis() + 50;
   } 
@@ -77,9 +81,9 @@ boolean buttonPress() {
 }
 
 void lightAll() {
-  digitalWrite(6, HIGH);
-  digitalWrite(9, !HIGH);
-  digitalWrite(10, HIGH);
+  for (int i = 0; i < NUM_LEDS; i++) {
+    digitalWrite(leds[i], HIGH);
+  }
 }
 
 byte gameDisplayControl [][3] = {
@@ -104,9 +108,11 @@ byte winDisplayControl [][3] = {
 };
 
 void updateGameDisplay(byte *displayControl) {
-  digitalWrite(10, displayControl[0]);  
-  digitalWrite(9, !displayControl[1]);
-  digitalWrite(6, displayControl[2]);
+
+  for (int i = 0; i < NUM_LEDS; i++) {
+    digitalWrite(leds[i], displayControl[i]);
+  }
+
 }
 
 boolean playAnimation(byte displayControl[][3], int maxIndex) {
