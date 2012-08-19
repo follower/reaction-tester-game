@@ -86,6 +86,12 @@ void lightAll() {
   }
 }
 
+void unlightAll() {
+  for (int i = 0; i < NUM_LEDS; i++) {
+    digitalWrite(leds[i], LOW);
+  }
+}
+
 byte gameDisplayControl [][3] = {
   {1,0,0},
   {0,1,0},
