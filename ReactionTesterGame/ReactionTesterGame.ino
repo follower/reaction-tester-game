@@ -143,6 +143,9 @@ void loop() {
        currentState = WAIT_START;
        clearButtonState();
        lightAll();
+
+       waitTime = 250; index = 0; nextChange = millis();
+       delay(waitTime);
        break;
        
      case WAIT_START:
