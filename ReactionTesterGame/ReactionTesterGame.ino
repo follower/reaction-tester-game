@@ -177,6 +177,7 @@ void loop() {
        }
        if (buttonPress()) {
          currentState = START_COUNTDOWN;
+         randomSeed(millis()); // TODO: Use different source? And only once?
        }
        break;
        
@@ -206,7 +207,14 @@ void loop() {
        
      case START_LEVEL:
        levelSpeed -= 100;
-       index = -1;
+
+       // Choose a side to start on
+       if (random(2) == 0) {
+         index = -1;
+       } else {
+         index = 1;
+       }
+
        currentState = PLAY_LEVEL;
        nextChange = 0;
        clearButtonState();
