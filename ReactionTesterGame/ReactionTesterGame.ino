@@ -152,6 +152,11 @@ void loop() {
        break;
        
      case START_COUNTDOWN:
+       lightAll();
+       delay(500);
+       unlightAll();
+       delay(500);
+
        waitTime = 250;
        nextChange = millis();
        // currentState = DO_COUNTDOWN; // The countdown just seemed to confuse people.
