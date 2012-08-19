@@ -148,7 +148,8 @@ void loop() {
      case START_COUNTDOWN:
        waitTime = 250;
        nextChange = millis();
-       currentState = DO_COUNTDOWN;
+       // currentState = DO_COUNTDOWN; // The countdown just seemed to confuse people.
+       currentState = PLAY_GAME;
        index = 0;
        break;
 
