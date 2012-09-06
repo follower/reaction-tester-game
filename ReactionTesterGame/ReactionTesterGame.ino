@@ -1,3 +1,19 @@
+/*
+
+   This is a version of my reaction tester game modified to work
+   with an ATtiny85.
+
+   ATtiny85 Pin-out:
+
+      Reset (1)  ---  (8) Vcc
+     Pin D3 (2) |   | (7) Pin D2 & SCK
+     Pin D4 (3) |   | (6) Pin D1 & MISO
+        GND (4)  ___  (5) Pin D0 & MOSI
+
+   (see below for pins used)
+
+ */
+
 const int NUM_LEDS = 3;
 
 int leds[NUM_LEDS] = {3, 4, 2};
