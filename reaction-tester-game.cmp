@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Mon 29 Oct 2012 08:48:57 NZDT
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Mon 29 Oct 2012 10:12:10 NZDT
 
 BeginCmp
 TimeStamp = /508D6729;
@@ -18,7 +18,7 @@ BeginCmp
 TimeStamp = /508D790F;
 Reference = CON1;
 ValeurCmp = AVR-ISP-6;
-IdModule  = ;
+IdModule  = AVR-ISP-6-PIN-EDGE;
 EndCmp
 
 BeginCmp

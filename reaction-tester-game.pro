@@ -1,4 +1,4 @@
-update=Mon 29 Oct 2012 08:31:45 NZDT
+update=Mon 29 Oct 2012 10:11:20 NZDT
 version=1
 last_client=cvpcb
 [pcbnew]
@@ -20,10 +20,11 @@ TxtLar=120
 MSegLar=120
 [pcbnew/libraries]
 LibName1=battery-cr2032-retainer-keystone-3003
-LibName2=led
-LibName3=w_smd_cap
-LibName4=w_smd_dil
-LibName5=w_smd_resistors
+LibName2=AVR-ISP-6-PIN-EDGE
+LibName3=led
+LibName4=w_smd_cap
+LibName5=w_smd_dil
+LibName6=w_smd_resistors
 LibDir=parts
 [general]
 version=1
