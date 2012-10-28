@@ -1,0 +1,138 @@
+# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 08:12:44 NZDT
+(
+ ( /508D66B9 SO8-200  IC1 ATTINY85-S {Lib=ATTINY85-S}
+  (    1 /~RESET~ )
+  (    2 N-000003 )
+  (    3 N-000002 )
+  (    4 GND )
+  (    5 /MOSI )
+  (    6 /MISO )
+  (    7 /SCK )
+  (    8 +BATT )
+ )
+ ( /508D6729 $noname  BT1 BATTERY_CR2032 {Lib=BATTERY_CR2032}
+  (    0 ? )
+  (    1 +BATT )
+  (    2 GND )
+ )
+ ( /508D698E $noname  R4 R {Lib=R}
+  (    1 +BATT )
+  (    2 /~RESET~ )
+ )
+ ( /508D6BC6 $noname  SW1 SW_PUSH {Lib=SW_PUSH}
+  (    1 GND )
+  (    2 /MISO )
+ )
+ ( /508D6F38 $noname  LD3 LED-G {Lib=LED}
+  (    1 N-000002 )
+  (    2 N-000006 )
+ )
+ ( /508D6FAB $noname  LD2 LED-R {Lib=LED}
+  (    1 N-000003 )
+  (    2 N-000005 )
+ )
+ ( /508D6FB1 $noname  LD1 LED-R {Lib=LED}
+  (    1 /SCK )
+  (    2 N-000004 )
+ )
+ ( /508D70E3 $noname  R3 R {Lib=R}
+  (    1 GND )
+  (    2 N-000006 )
+ )
+ ( /508D70E9 $noname  R2 R {Lib=R}
+  (    1 GND )
+  (    2 N-000005 )
+ )
+ ( /508D70EF $noname  R1 R {Lib=R}
+  (    1 GND )
+  (    2 N-000004 )
+ )
+ ( /508D790F AVR-ISP-6  CON1 AVR-ISP-6 {Lib=AVR-ISP-6}
+  (    1 /MISO )
+  (    2 +BATT )
+  (    3 /SCK )
+  (    4 /MOSI )
+  (    5 /~RESET~ )
+  (    6 GND )
+ )
+ ( /508D7EAA $noname  C1 C {Lib=C}
+  (    1 +BATT )
+  (    2 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R4
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$component C1
+ C?
+ SM*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/MOSI" "MOSI"
+ CON1 4
+ IC1 5
+Net 2 "" ""
+ LD3 1
+ IC1 3
+Net 3 "" ""
+ IC1 2
+ LD2 1
+Net 4 "" ""
+ LD1 2
+ R1 2
+Net 5 "" ""
+ R2 2
+ LD2 2
+Net 6 "" ""
+ LD3 2
+ R3 2
+Net 7 "/SCK" "SCK"
+ CON1 3
+ IC1 7
+ LD1 1
+Net 8 "GND" "GND"
+ BT1 2
+ IC1 4
+ SW1 1
+ R1 1
+ R2 1
+ R3 1
+ C1 2
+ CON1 6
+Net 9 "+BATT" "+BATT"
+ IC1 8
+ R4 1
+ CON1 2
+ C1 1
+ BT1 1
+Net 10 "/~RESET~" "~RESET~"
+ R4 2
+ CON1 5
+ IC1 1
+Net 12 "/MISO" "MISO"
+ SW1 2
+ CON1 1
+ IC1 6
+}
+#End
