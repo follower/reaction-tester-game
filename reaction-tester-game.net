@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 08:12:44 NZDT
+# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 11:22:31 NZDT
 (
  ( /508D66B9 SO8-200  IC1 ATTINY85-S {Lib=ATTINY85-S}
   (    1 /~RESET~ )
@@ -27,11 +27,11 @@
   (    1 N-000002 )
   (    2 N-000006 )
  )
- ( /508D6FAB $noname  LD2 LED-R {Lib=LED}
+ ( /508D6FAB $noname  LD2 LED-R1 {Lib=LED}
   (    1 N-000003 )
   (    2 N-000005 )
  )
- ( /508D6FB1 $noname  LD1 LED-R {Lib=LED}
+ ( /508D6FB1 $noname  LD1 LED-R2 {Lib=LED}
   (    1 /SCK )
   (    2 N-000004 )
  )
