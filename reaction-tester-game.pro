@@ -1,4 +1,4 @@
-update=Mon 29 Oct 2012 05:50:14 NZDT
+update=Mon 29 Oct 2012 05:55:36 NZDT
 version=1
 last_client=eeschema
 [cvpcb]
@@ -40,7 +40,7 @@ LibName11=valves
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=parts
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -48,3 +48,6 @@ RptLab=1
 LabSize=60
 [eeschema/libraries]
 LibName1=atmel
+LibName2=battery-cr2032
+LibName3=power
+LibName4=w_device
