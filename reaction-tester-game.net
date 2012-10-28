@@ -1,9 +1,9 @@
-# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 11:22:31 NZDT
+# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 11:54:46 NZDT
 (
  ( /508D66B9 SO8-200  IC1 ATTINY85-S {Lib=ATTINY85-S}
   (    1 /~RESET~ )
-  (    2 N-000003 )
-  (    3 N-000002 )
+  (    2 N-000010 )
+  (    3 N-000007 )
   (    4 GND )
   (    5 /MOSI )
   (    6 /MISO )
@@ -24,28 +24,28 @@
   (    2 /MISO )
  )
  ( /508D6F38 $noname  LD3 LED-G {Lib=LED}
-  (    1 N-000002 )
-  (    2 N-000006 )
+  (    1 N-000011 )
+  (    2 GND )
  )
  ( /508D6FAB $noname  LD2 LED-R1 {Lib=LED}
-  (    1 N-000003 )
-  (    2 N-000005 )
+  (    1 N-000008 )
+  (    2 GND )
  )
  ( /508D6FB1 $noname  LD1 LED-R2 {Lib=LED}
-  (    1 /SCK )
-  (    2 N-000004 )
+  (    1 N-000009 )
+  (    2 GND )
  )
  ( /508D70E3 $noname  R3 R {Lib=R}
-  (    1 GND )
-  (    2 N-000006 )
+  (    1 N-000011 )
+  (    2 N-000007 )
  )
  ( /508D70E9 $noname  R2 R {Lib=R}
-  (    1 GND )
-  (    2 N-000005 )
+  (    1 N-000008 )
+  (    2 N-000010 )
  )
  ( /508D70EF $noname  R1 R {Lib=R}
-  (    1 GND )
-  (    2 N-000004 )
+  (    1 N-000009 )
+  (    2 /SCK )
  )
  ( /508D790F AVR-ISP-6  CON1 AVR-ISP-6 {Lib=AVR-ISP-6}
   (    1 /MISO )
@@ -89,50 +89,50 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "/MOSI" "MOSI"
- CON1 4
- IC1 5
-Net 2 "" ""
- LD3 1
- IC1 3
-Net 3 "" ""
- IC1 2
- LD2 1
-Net 4 "" ""
- LD1 2
- R1 2
-Net 5 "" ""
- R2 2
- LD2 2
-Net 6 "" ""
- LD3 2
- R3 2
-Net 7 "/SCK" "SCK"
- CON1 3
- IC1 7
- LD1 1
-Net 8 "GND" "GND"
+Net 1 "GND" "GND"
+ CON1 6
  BT1 2
  IC1 4
+ LD1 2
+ LD2 2
+ LD3 2
  SW1 1
- R1 1
- R2 1
- R3 1
  C1 2
- CON1 6
-Net 9 "+BATT" "+BATT"
- IC1 8
+Net 2 "+BATT" "+BATT"
  R4 1
- CON1 2
  C1 1
  BT1 1
-Net 10 "/~RESET~" "~RESET~"
+ IC1 8
+ CON1 2
+Net 3 "/MOSI" "MOSI"
+ CON1 4
+ IC1 5
+Net 4 "/~RESET~" "~RESET~"
  R4 2
  CON1 5
  IC1 1
-Net 12 "/MISO" "MISO"
- SW1 2
+Net 5 "/SCK" "SCK"
+ R1 2
+ CON1 3
+ IC1 7
+Net 6 "/MISO" "MISO"
  CON1 1
  IC1 6
+ SW1 2
+Net 7 "" ""
+ IC1 3
+ R3 2
+Net 8 "" ""
+ LD2 1
+ R2 1
+Net 9 "" ""
+ R1 1
+ LD1 1
+Net 10 "" ""
+ R2 2
+ IC1 2
+Net 11 "" ""
+ R3 1
+ LD3 1
 }
 #End
