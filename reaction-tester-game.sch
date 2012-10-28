@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 29 Oct 2012 07:52:10 NZDT
+EESchema Schematic File Version 2  date Mon 29 Oct 2012 10:32:42 NZDT
 LIBS:atmel
 LIBS:battery-cr2032
 LIBS:power
@@ -214,7 +214,7 @@ L LED LD2
 U 1 1 508D6FAB
 P 3500 3650
 F 0 "LD2" H 3500 3750 40  0000 C CNN
-F 1 "LED-R" H 3500 3550 40  0000 C CNN
+F 1 "LED-R1" H 3500 3550 40  0000 C CNN
 	1    3500 3650
 	0    1    1    0   
 $EndComp
@@ -223,7 +223,7 @@ L LED LD1
 U 1 1 508D6FB1
 P 3250 3550
 F 0 "LD1" H 3250 3650 40  0000 C CNN
-F 1 "LED-R" H 3250 3450 40  0000 C CNN
+F 1 "LED-R2" H 3250 3450 40  0000 C CNN
 	1    3250 3550
 	0    1    1    0   
 $EndComp
