@@ -1,4 +1,4 @@
-update=Mon 29 Oct 2012 10:11:20 NZDT
+update=Mon 29 Oct 2012 11:03:52 NZDT
 version=1
 last_client=cvpcb
 [pcbnew]
@@ -21,10 +21,11 @@ MSegLar=120
 [pcbnew/libraries]
 LibName1=battery-cr2032-retainer-keystone-3003
 LibName2=AVR-ISP-6-PIN-EDGE
-LibName3=led
-LibName4=w_smd_cap
-LibName5=w_smd_dil
-LibName6=w_smd_resistors
+LibName3=OMRON-PUSH-BUTTON-B3SN-3112P
+LibName4=led
+LibName5=w_smd_cap
+LibName6=w_smd_dil
+LibName7=w_smd_resistors
 LibDir=parts
 [general]
 version=1

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Mon 29 Oct 2012 10:12:10 NZDT
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Mon 29 Oct 2012 11:05:36 NZDT
 
 BeginCmp
 TimeStamp = /508D6729;
@@ -81,7 +81,7 @@ BeginCmp
 TimeStamp = /508D6BC6;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
-IdModule  = ;
+IdModule  = OMRON-PUSH-BUTTON-B3SN-3112P;
 EndCmp
 
 EndListe
