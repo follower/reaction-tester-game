@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Mon 29 Oct 2012 08:48:57 NZDT
+
+BeginCmp
+TimeStamp = /508D6729;
+Reference = BT1;
+ValeurCmp = BATTERY_CR2032;
+IdModule  = CR2032_HOLDER_KEYSTONE_3003;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D7EAA;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D790F;
+Reference = CON1;
+ValeurCmp = AVR-ISP-6;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D66B9;
+Reference = IC1;
+ValeurCmp = ATTINY85-S;
+IdModule  = so-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D6FB1;
+Reference = LD1;
+ValeurCmp = LED-R;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D6FAB;
+Reference = LD2;
+ValeurCmp = LED-R;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D6F38;
+Reference = LD3;
+ValeurCmp = LED-G;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D70EF;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D70E9;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D70E3;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D698E;
+Reference = R4;
+ValeurCmp = R;
+IdModule  = r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /508D6BC6;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = ;
+EndCmp
+
+EndListe
