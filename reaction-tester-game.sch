@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 29 Oct 2012 11:54:39 NZDT
+EESchema Schematic File Version 2  date Mon 29 Oct 2012 13:08:26 NZDT
 LIBS:atmel
 LIBS:battery-cr2032
 LIBS:power
@@ -10,7 +10,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "28 oct 2012"
+Date "29 oct 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -151,7 +151,7 @@ L LED LD3
 U 1 1 508D6F38
 P 3800 4050
 F 0 "LD3" H 3800 4150 40  0000 C CNN
-F 1 "LED-G" H 3800 3950 40  0000 C CNN
+F 1 "LED-R1" H 3800 3950 40  0000 C CNN
 	1    3800 4050
 	0    1    1    0   
 $EndComp
@@ -160,7 +160,7 @@ L LED LD2
 U 1 1 508D6FAB
 P 3500 4050
 F 0 "LD2" H 3500 4150 40  0000 C CNN
-F 1 "LED-R1" H 3500 3950 40  0000 C CNN
+F 1 "LED-G" H 3500 3950 40  0000 C CNN
 	1    3500 4050
 	0    1    1    0   
 $EndComp
