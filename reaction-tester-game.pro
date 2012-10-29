@@ -1,21 +1,8 @@
-update=Mon 29 Oct 2012 11:07:24 NZDT
+update=Mon 29 Oct 2012 14:00:56 NZDT
 version=1
-last_client=pcbnew
+last_client=eeschema
 [general]
 version=1
-[eeschema]
-version=1
-LibDir=parts
-NetFmtName=
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
-[eeschema/libraries]
-LibName1=atmel
-LibName2=battery-cr2032
-LibName3=power
-LibName4=w_device
 [cvpcb]
 version=1
 NetIExt=net
@@ -46,3 +33,17 @@ LibName4=w_smd_cap
 LibName5=w_smd_dil
 LibName6=w_smd_resistors
 LibName7=OMRON-PUSH-BUTTON-B3SN-3112P
+[eeschema]
+version=1
+LibDir=parts
+NetFmtName=Pcbnew
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
+[eeschema/libraries]
+LibName1=sw_push_alternate_pinout_via_w_device_lib
+LibName2=atmel
+LibName3=battery-cr2032
+LibName4=power
+LibName5=w_device

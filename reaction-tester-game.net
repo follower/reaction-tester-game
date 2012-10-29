@@ -1,9 +1,9 @@
-# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 13:08:33 NZDT
+# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 14:01:44 NZDT
 (
  ( /508D66B9 SO8-200  IC1 ATTINY85-S {Lib=ATTINY85-S}
   (    1 /~RESET~ )
-  (    2 N-000010 )
-  (    3 N-000007 )
+  (    2 N-000009 )
+  (    3 N-000008 )
   (    4 GND )
   (    5 /MOSI )
   (    6 /MISO )
@@ -19,32 +19,28 @@
   (    1 +BATT )
   (    2 /~RESET~ )
  )
- ( /508D6BC6 $noname  SW1 SW_PUSH {Lib=SW_PUSH}
-  (    1 GND )
-  (    2 /MISO )
- )
  ( /508D6F38 $noname  LD3 LED-R1 {Lib=LED}
-  (    1 N-000011 )
+  (    1 N-000010 )
   (    2 GND )
  )
  ( /508D6FAB $noname  LD2 LED-G {Lib=LED}
-  (    1 N-000008 )
+  (    1 N-000005 )
   (    2 GND )
  )
  ( /508D6FB1 $noname  LD1 LED-R2 {Lib=LED}
-  (    1 N-000009 )
+  (    1 N-000006 )
   (    2 GND )
  )
  ( /508D70E3 $noname  R3 R {Lib=R}
-  (    1 N-000011 )
-  (    2 N-000007 )
+  (    1 N-000010 )
+  (    2 N-000008 )
  )
  ( /508D70E9 $noname  R2 R {Lib=R}
-  (    1 N-000008 )
-  (    2 N-000010 )
+  (    1 N-000005 )
+  (    2 N-000009 )
  )
  ( /508D70EF $noname  R1 R {Lib=R}
-  (    1 N-000009 )
+  (    1 N-000006 )
   (    2 /SCK )
  )
  ( /508D790F AVR-ISP-6  CON1 AVR-ISP-6 {Lib=AVR-ISP-6}
@@ -58,6 +54,10 @@
  ( /508D7EAA $noname  C1 C {Lib=C}
   (    1 +BATT )
   (    2 GND )
+ )
+ ( /508DD558 $noname  SW1 SW_PUSH_ALT {Lib=SW_PUSH_ALT}
+  (    1 GND )
+  (    3 /MISO )
  )
 )
 *
@@ -90,49 +90,49 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "GND" "GND"
- CON1 6
+ SW1 1
  BT1 2
  IC1 4
+ CON1 6
  LD1 2
  LD2 2
  LD3 2
- SW1 1
  C1 2
 Net 2 "+BATT" "+BATT"
  R4 1
- C1 1
  BT1 1
  IC1 8
  CON1 2
+ C1 1
 Net 3 "/MOSI" "MOSI"
- CON1 4
  IC1 5
+ CON1 4
 Net 4 "/~RESET~" "~RESET~"
- R4 2
  CON1 5
  IC1 1
-Net 5 "/SCK" "SCK"
- R1 2
- CON1 3
- IC1 7
-Net 6 "/MISO" "MISO"
- CON1 1
- IC1 6
- SW1 2
-Net 7 "" ""
- IC1 3
- R3 2
-Net 8 "" ""
- LD2 1
+ R4 2
+Net 5 "" ""
  R2 1
-Net 9 "" ""
+ LD2 1
+Net 6 "" ""
  R1 1
  LD1 1
-Net 10 "" ""
+Net 7 "/SCK" "SCK"
+ R1 2
+ IC1 7
+ CON1 3
+Net 8 "" ""
+ IC1 3
+ R3 2
+Net 9 "" ""
  R2 2
  IC1 2
-Net 11 "" ""
+Net 10 "" ""
  R3 1
  LD3 1
+Net 12 "/MISO" "MISO"
+ CON1 1
+ SW1 3
+ IC1 6
 }
 #End
