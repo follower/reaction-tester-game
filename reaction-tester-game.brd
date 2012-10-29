@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Mon 29 Oct 2012 16:24:19 NZDT
+PCBNEW-BOARD Version 2 date Mon 29 Oct 2012 17:13:07 NZDT
 
 # Created by Pcbnew(2012-oct-18)-testing
 
@@ -57,12 +57,12 @@ TextPcbSize 1 1
 EdgeModWidth 0.15
 TextModSize 1 1
 TextModWidth 0.15
-PadSize 3 3
-PadDrill 1.999
+PadSize 1.999 5.0013
+PadDrill 0
 Pad2MaskClearance 0
 AuxiliaryAxisOrg 0 0
-VisibleElements 7FFFFFDF
-PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 152400) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+VisibleElements 7FFFFFFF
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 152400) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory ""))
 $EndSETUP
 
 $EQUIPOT
@@ -135,6 +135,61 @@ AddNet "N-000008"
 AddNet "N-000009"
 AddNet "N-000010"
 $EndNCLASS
+$MODULE AVR-ISP-6-PIN-EDGE
+Po 146.05 138.43 2700 15 508E01D5 508DA2C3 ~~
+Li AVR-ISP-6-PIN-EDGE
+Sc 508DA2C3
+AR /508D790F
+Op 0 0 0
+T0 0 3.81 1.00076 1.00076 2700 0.14986 N V 21 N "CON1"
+T1 0 3.5 1 1 2700 0.15 N V 21 N "AVR-ISP-6"
+DS -6.35 -2.54 -6.35 5.08 0.15 21
+DS -6.35 5.08 6.35 5.08 0.15 21
+DS 6.35 5.08 6.35 -2.54 0.15 21
+T2 -5.08 -1.27 1.00076 1.00076 2700 0.14986 N V 21 N "1"
+$PAD
+Sh "3" R 2 5 0 0 2700
+Dr 0 0 0
+At SMD N 00808000
+Ne 4 "/SCK"
+Po 0 0
+$EndPAD
+$PAD
+Sh "1" R 2 5 0 0 2700
+Dr 0 0 0
+At SMD N 00808000
+Ne 2 "/MISO"
+Po -2.54 0
+$EndPAD
+$PAD
+Sh "5" R 2 5 0 0 2700
+Dr 0 0 0
+At SMD N 00808000
+Ne 5 "/~RESET~"
+Po 2.54 0
+$EndPAD
+$PAD
+Sh "2" R 1.999 5.0013 0 0 2700
+Dr 0 0 0
+At SMD N 00400001
+Ne 1 "+BATT"
+Po -2.54 0
+$EndPAD
+$PAD
+Sh "4" R 1.999 5.0013 0 0 2700
+Dr 0 0 0
+At SMD N 00400001
+Ne 3 "/MOSI"
+Po 0 0
+$EndPAD
+$PAD
+Sh "6" R 1.999 5.0013 0 0 2700
+Dr 0 0 0
+At SMD N 00400001
+Ne 6 "GND"
+Po 2.54 0
+$EndPAD
+$EndMODULE AVR-ISP-6-PIN-EDGE
 $MODULE CR2032_HOLDER_KEYSTONE_3003
 Po 136.525 151.13 -0 0 508DF642 508DA2A9 ~~
 Li CR2032_HOLDER_KEYSTONE_3003
@@ -673,61 +728,6 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE c_0805
-$MODULE AVR-ISP-6-PIN-EDGE
-Po 146.05 138.43 2700 15 508D9ED0 508DA2C3 ~~
-Li AVR-ISP-6-PIN-EDGE
-Sc 508DA2C3
-AR /508D790F
-Op 0 0 0
-T0 0 3.81 1.00076 1.00076 2700 0.14986 N V 21 N "CON1"
-T1 0 3.5 1 1 2700 0.15 N V 21 N "AVR-ISP-6"
-DS -6.35 -2.54 -6.35 5.08 0.15 21
-DS -6.35 5.08 6.35 5.08 0.15 21
-DS 6.35 5.08 6.35 -2.54 0.15 21
-T2 -5.08 -1.27 1.00076 1.00076 2700 0.14986 N V 21 N "1"
-$PAD
-Sh "3" R 2 5 0 0 2700
-Dr 0 0 0
-At SMD N 00808000
-Ne 4 "/SCK"
-Po 0 0
-$EndPAD
-$PAD
-Sh "1" R 2 5 0 0 2700
-Dr 0 0 0
-At SMD N 00808000
-Ne 2 "/MISO"
-Po -2.54 0
-$EndPAD
-$PAD
-Sh "5" R 2 5 0 0 2700
-Dr 0 0 0
-At SMD N 00808000
-Ne 5 "/~RESET~"
-Po 2.54 0
-$EndPAD
-$PAD
-Sh "2" R 1.99898 5.00126 0 0 2700
-Dr 0 0 0
-At SMD N 00800001
-Ne 1 "+BATT"
-Po -2.54 0
-$EndPAD
-$PAD
-Sh "4" R 1.99898 5.00126 0 0 2700
-Dr 0 0 0
-At SMD N 00800001
-Ne 3 "/MOSI"
-Po 0 0
-$EndPAD
-$PAD
-Sh "6" R 1.99898 5.00126 0 0 2700
-Dr 0 0 0
-At SMD N 00800001
-Ne 6 "GND"
-Po 2.54 0
-$EndPAD
-$EndMODULE AVR-ISP-6-PIN-EDGE
 $MODULE OMRON-PUSH-BUTTON-B3SN-3112P
 Po 136.525 154.94 0 15 508DAB09 508DACBE ~~
 Li OMRON-PUSH-BUTTON-B3SN-3112P
