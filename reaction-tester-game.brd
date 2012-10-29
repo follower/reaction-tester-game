@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Mon 29 Oct 2012 18:02:32 NZDT
+PCBNEW-BOARD Version 2 date Mon 29 Oct 2012 19:03:22 NZDT
 
 # Created by Pcbnew(2012-oct-18)-testing
 
@@ -10,7 +10,7 @@ EnabledLayers 1FFF8001
 Links 23
 NoConn 0
 Di 124.265267 123.089999 153.770001 161.574501
-Ndraw 10
+Ndraw 11
 Ntrack 123
 Nzone 0
 BoardThickness 1.6
@@ -780,6 +780,12 @@ Ne 0 ""
 Po -3.4 -2
 $EndPAD
 $EndMODULE OMRON-PUSH-BUTTON-B3SN-3112P
+$TEXTPCB
+Te "rancidbacon.com/p/react"
+nl "20121029A"
+Po 147.32 128.27 1 1 0.25 0
+De 20 0 0 Normal L C
+$EndTEXTPCB
 $DRAWSEGMENT
 Po 2 125.095 160.655 125.095 161.29 0.15
 De 28 0 900 0 0
