@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 14:01:44 NZDT
+# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 14:11:41 NZDT
 (
  ( /508D66B9 SO8-200  IC1 ATTINY85-S {Lib=ATTINY85-S}
   (    1 /~RESET~ )
@@ -11,8 +11,8 @@
   (    8 +BATT )
  )
  ( /508D6729 $noname  BT1 BATTERY_CR2032 {Lib=BATTERY_CR2032}
-  (    0 ? )
-  (    1 +BATT )
+  (    0 +BATT )
+  (    1 ? )
   (    2 GND )
  )
  ( /508D698E $noname  R4 R {Lib=R}
@@ -100,39 +100,39 @@ Net 1 "GND" "GND"
  C1 2
 Net 2 "+BATT" "+BATT"
  R4 1
- BT1 1
+ BT1 0
  IC1 8
  CON1 2
  C1 1
 Net 3 "/MOSI" "MOSI"
- IC1 5
  CON1 4
-Net 4 "/~RESET~" "~RESET~"
- CON1 5
- IC1 1
- R4 2
+ IC1 5
 Net 5 "" ""
  R2 1
  LD2 1
 Net 6 "" ""
  R1 1
  LD1 1
-Net 7 "/SCK" "SCK"
- R1 2
- IC1 7
- CON1 3
+Net 7 "/~RESET~" "~RESET~"
+ CON1 5
+ IC1 1
+ R4 2
 Net 8 "" ""
- IC1 3
  R3 2
+ IC1 3
 Net 9 "" ""
  R2 2
  IC1 2
 Net 10 "" ""
- R3 1
  LD3 1
+ R3 1
+Net 11 "/SCK" "SCK"
+ IC1 7
+ R1 2
+ CON1 3
 Net 12 "/MISO" "MISO"
- CON1 1
- SW1 3
  IC1 6
+ SW1 3
+ CON1 1
 }
 #End
