@@ -16,7 +16,7 @@
 
 const int NUM_LEDS = 3;
 
-int leds[NUM_LEDS] = {3, 4, 2};
+int leds[NUM_LEDS] = {4, 3, 2};
 
 
 const int buttonPin = 1;
