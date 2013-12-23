@@ -91,6 +91,13 @@ byte currentState = POWERUP;
 
 boolean inKeyPress = false; 
 
+unsigned int currentLevel = 0;
+
+unsigned int levelSpeedLookup[] = {1100, 950, 800, 650, 575, 500, 450, 400, 350, 300, 275, 250, 225, 200, 150, 100, 50, 0};
+
+const unsigned int MAX_LEVEL_NUM = sizeof(levelSpeedLookup)/sizeof(unsigned int);
+
+
 void clearButtonState() {
   finishTime = 0;
   while (!(digitalRead(buttonPin) == HIGH)) {
@@ -217,12 +224,14 @@ void loop() {
        break;
        
      case PLAY_GAME:
-       levelSpeed = 1100;
+       //levelSpeed = 1100;
+       currentLevel = 0;
        currentState = START_LEVEL;
        break;  
        
      case START_LEVEL:
-       levelSpeed -= 100;
+       //levelSpeed -= 100;
+       levelSpeed = levelSpeedLookup[currentLevel];
 
        // Choose a side to start on
        if (random(2) == 0) {
@@ -264,6 +273,9 @@ void loop() {
      case WIN_LEVEL:
        if (playAnimation(winDisplayControl, sizeof(winDisplayControl)/3)) {
          currentState = START_LEVEL;
+         if (levelSpeed != 0) { // Check we haven't reached the end of the speed list.
+           currentLevel++;
+         }
        }               
        break;
        
