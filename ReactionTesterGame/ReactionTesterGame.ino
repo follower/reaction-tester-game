@@ -224,13 +224,11 @@ void loop() {
        break;
        
      case PLAY_GAME:
-       //levelSpeed = 1100;
        currentLevel = 0;
        currentState = START_LEVEL;
        break;  
        
      case START_LEVEL:
-       //levelSpeed -= 100;
        levelSpeed = levelSpeedLookup[currentLevel];
 
        // Choose a side to start on
